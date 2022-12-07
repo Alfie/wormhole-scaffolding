@@ -32,3 +32,19 @@ export const HELLO_WORLD_ADDRESS = new PublicKey(
 export const HELLO_TOKEN_ADDRESS = new PublicKey(
   process.env.TESTING_HELLO_TOKEN_ADDRESS!
 );
+
+export const GOVERNANCE_ADDRESS = new PublicKey(
+  process.env.TESTING_GOVERNANCE_ADDRESS!
+);
+
+export const REALMS_ADDRESS = new PublicKey(
+  process.env.TESTING_REALMS_ADDRESS!
+);
+
+export const TOKEN_PROGRAM_ID = new PublicKey(
+  process.env.TESTING_SPL_TOKEN_ADDRESS!
+);
+
+export const ASSOCIATED_TOKEN_PROGRAM_ID = new PublicKey(
+  process.env.TESTING_SPL_TOKEN_ASSOCIATED_ACCOUNT_ADDRESS!
+);

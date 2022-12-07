@@ -6,6 +6,7 @@ skip-lint = false
 ### WARNING: Be sure to change these pubkeys to reflect your deployed keypairs
 hello_world = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
 hello_token = "GDch61JmJpTo9npwenypnk3KdofmozK1hNaTdbYRkNPb"
+governance  = "6CunRn1u11RPrJAexedhXKsuek3gFJcEdSjavfLTBZp1"
 
 [registry]
 url = "https://api.apr.dev"
@@ -30,3 +31,15 @@ program = "./dependencies/wormhole.so"
 [[test.genesis]]
 address = "wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb"
 program = "./dependencies/token_bridge.so"
+
+[[test.genesis]]
+address = "BnPgcSAhLM362Haqhe83XEHhkDGZqyXQeJWnWNPKWZmi"
+program = "./dependencies/spl_governance.so"
+
+[[test.genesis]]
+address = "7Zq76qnnZJ7ZvZYSwTSx2aucZGPk4xknyBmXCpjKoDEX"
+program = "./dependencies/spl_token.so"
+
+[[test.genesis]]
+address = "6yQfvhZjCefqk68aL5AeiQ9i2BBojquS4XAD9xqYk5ye"
+program = "./dependencies/spl_associated_token_account.so"

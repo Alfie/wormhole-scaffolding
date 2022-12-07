@@ -1,0 +1,25 @@
+[package]
+name = "governance"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "governance"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.25.0"
+spl-governance = { version = "2.2.2", features = ["no-entrypoint"] }
+wormhole-anchor-sdk = { path = "../../modules/wormhole-anchor-sdk", features = ["mainnet", "token-bridge"] }
+
+[dev-dependencies]
+borsh = "0.9.1"
+solana-sdk = "1.9.5"
